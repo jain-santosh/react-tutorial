@@ -135,3 +135,10 @@ li a {
   font-size: 18px;
   padding: 10px;
 }
+
+.delete {
+  background: #eb4a4a;
+  color: #ffffff;
+  display: flex;
+  align-self: flex-end;
+}

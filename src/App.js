@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   const [tasks, setTasks] = useLocalStorage("tasks", []);
 
-  const theme = "light";
+  const theme = "dark";
 
   const addTask = (task) => {
     setTasks([...tasks, task]);

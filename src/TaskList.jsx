@@ -13,11 +13,12 @@ function TaskList({tasks}) {
                 color : theme === "light" ? "#333" : "#fff"
             }}>
             <ul>
-                {tasks.map((task, index) => 
-                    (
-                        <Link to={`/tasks/${index}`}>{task} </Link>
-                    )
-                )}
+                {tasks.map((task, index) => (
+                    <li key={index}>
+                        <Link to={`task/${index}`}>{task}</Link>
+                        <button className="delete">Delete</button>
+                    </li>
+                ))}
             </ul>
         </div>
     );
