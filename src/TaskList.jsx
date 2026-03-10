@@ -15,7 +15,7 @@ function TaskList({tasks}) {
             <ul>
                 {tasks.map((task, index) => (
                     <li key={index}>
-                        <Link to={`task/${index}`}>{task}</Link>
+                        <Link to={`tasks/${index}`}>{task}</Link>
                         <button className="delete">Delete</button>
                     </li>
                 ))}
